@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title> Farming Calculator..
+    </title>
+    <script>
+        function calculate() {
+            var sqlength=Number(document.getElementById("sql").value);
+
+            var area = sqlength* sqlength;
+            var lengthoffence = sqlength *4;
+
+            document.getElementById("lbarea").innerHTML = area;
+
+            document.getElementById("lbfence").innerHTML = lengthoffence;
+
+
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to top, green, white);
+            font-style: italic;
+            font-size: 36px;
+        }
+
+        button {
+            border-radius: 5px;
+            border-style: double;
+            height: 40px;
+            width: 100px;
+            background-size: cover;
+            border-width: thick;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Farming Calculator .</h1>
+    <div>Enter the length of the side of the farm
+        <input type="number" class="ibox" id="sql">
+
+
+    </div>
+    <Br>
+
+    <button id="btn" onclick="calculate()">Calulate .</button>
+
+
+    <Br>
+    <Br>
+
+    <div>Area of the Farm :
+        <label id="lbarea"></label>
+    </div>
+
+
+    <Br>
+    <Br>
+
+    <div>Length of Fence to be Purchase :
+        <label id="lbfence"></label>
+    </div>
+</body></html>
